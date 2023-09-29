@@ -7,15 +7,22 @@ function generate() {
 
 
     }
-
+   
+    
     let authors = Object.keys(quotes);
-
-    let author = authors[Math.floor(Math.random() * authors.length)];
-
+    let author;
+    do {
+        author = authors[Math.floor(Math.random() * authors.length)];
+      } while (author === previousAuthor); 
+      previousAuthor = author;
     var quote = quotes[author];
-
+   // document.getElementById('author').style.display='none';
     document.getElementById('quote').innerHTML= quote;
     document.getElementById('author').innerHTML= author;
+}
 
+let previousAuthor = null;
 
+function list(){
+    
 }

@@ -3,7 +3,7 @@ body{
 }
 
 .container{
-    border: 1px solid black;
+    
     width:95%;
     text-align: center;
     display: flex;
@@ -15,7 +15,7 @@ body{
 }
 
 .quotes{
-    border: 1px solid black;
+    
     width: 900px;
     height: 450px;
     margin: auto;
